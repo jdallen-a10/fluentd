@@ -32,7 +32,7 @@ Build this container:
 docker build -t a10networks/fluentd:latest .
 ```
 
-Next we need to create the custom configuration to take in the Thunder log records and push them over to the ElasticSearch node:
+Next we need to create the custom configuration to take in log records and push them over to the ElasticSearch node:
 
 ```xml
 # -- fluent-to-ES.conf
