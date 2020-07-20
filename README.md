@@ -1,13 +1,13 @@
 # fluentd
 A fluentd container with build-in support ElasticSearch.<br>
 <br>
-[Fluentd](<https://www.fluentd.org/>) is a [CNCF Project](<https://landscape.cncf.io/category=observability-and-analysis&format=card-mode&grouping=category&selecte$
+[Fluentd](<https://www.fluentd.org/>) is a [CNCF Project](<https://landscape.cncf.io/category=observability-and-analysis&format=card-mode&grouping=category&selected=fluentd>) created to take in many different logging and data sources and provide a unified logging layer between these backend systems and other solutions that can use the data. Multiple nodes and of different types can be combined into a datastream for the different analytical and observability solutions. As of this writing, there are [42 different solutions](<https://www.fluentd.org/dataoutputs>) that Fluentd can output to!
 
-In this example, we are going to create a custom ``fluentd`` configuration to push our Thunder records over to ElasticSearch for storage and later retrieval by Kib$
+In this example, we are going to create a custom ``fluentd`` configuration to push our log records over to ElasticSearch for storage and later retrieval by Kibana.
 
 ### Build the Container
 
-One nice thing about containers, is that you can take existing ones, and add on to them to create your own custom version.  In this case, we are taking a default `$
+One nice thing about containers, is that you can take existing ones, and add on to them to create your own custom version.  In this case, we are taking a default `fluentd` container and adding a couple of plug-ins to support EleasticSearch:
 
 ```dockerfile
 FROM fluent/fluentd:latest
