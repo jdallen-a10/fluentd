@@ -1,5 +1,5 @@
 # fluentd
-A fluentd container with build-in support ElasticSearch.<br>
+A fluentd container with build-in support for ElasticSearch.<br>
 <br>
 [Fluentd](<https://www.fluentd.org/>) is a [CNCF Project](<https://landscape.cncf.io/category=observability-and-analysis&format=card-mode&grouping=category&selected=fluentd>) created to take in many different logging and data sources and provide a unified logging layer between these backend systems and other solutions that can use the data. Multiple nodes and of different types can be combined into a datastream for the different analytical and observability solutions. As of this writing, there are [42 different solutions](<https://www.fluentd.org/dataoutputs>) that Fluentd can output to!
 
